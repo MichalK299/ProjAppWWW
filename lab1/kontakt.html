@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="pl" />
+    <meta name="Author" content="Michał Kaczmarczyk" />
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="s1.css">
+</head>
+<body>
+
+<form id="contact" action="mailto:adres_email@example.com" method="post" enctype="text/plain">
+    <label for="name">Imię i nazwisko:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Adres e-mail:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Wiadomość:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+    <input type="submit" value="Wyślij">
+    <input type="reset" value="Wyczyść">
+</form>
+</body>
+</html>
