@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="pl" />
+    <meta name="Author" content="Michał Kaczmarczyk" />
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="s1.css">
+	<script src="kolorujtlo.js" type="text/javascript"></script>
+	<script src="timedate.js" type="text/javascript"></script>
+</head>
+<body onload="startclock()">
+
+<form id="contact" action="mailto:adres_email@example.com" method="post" enctype="text/plain">
+    <label for="name">Imię i nazwisko:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Adres e-mail:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Wiadomość:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+    <input type="submit" value="Wyślij">
+    <input type="reset" value="Wyczyść">
+</form>
+
+<form method="post" name="background">
+	<input type="button" value="żółty" onclick="changeBackground('#FFF000')">
+	<input type="button" value="czarny" onclick="changeBackground('#000000')">
+	<input type="button" value="biały" onclick="changeBackground('#FFFFFF')">
+	<input type="button" value="zielony" onclick="changeBackground('#00FF00')">
+	<input type="button" value="niebieski" onclick="changeBackground('#0000FF')">
+	<input type="button" value="pomarańczowy" onclick="changeBackground('#FF8000')">
+	<input type="button" value="szary" onclick="changeBackground('#c0c0c0')">
+	<input type="button" value="czerwony" onclick="changeBackground('#FF0000')">
+</form>
+
+	<div id="zegarek"></div>
+	<div id="data"></div>
+</body>
+</html>
