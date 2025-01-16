@@ -154,13 +154,11 @@ if (isset($_GET['login']) && !$is_logged_in) {
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
 
-        // Modyfikujemy treść, aby obrazy miały prawidłowe ścieżki
         $content = str_replace("../img/", "img/", $row['page_content']);
 
         echo "<div class='burj-khalifa'>";
-        echo $content; // Wyświetlamy treść z bazy danych (bez duplikacji tytułu)
+        echo $content;
 
-        // Dodanie przycisku do następnej strony
         echo "<div class='next-button'>";
         echo "<a href='index.php?id=2' class='button'>Przejdź do następnej strony</a>";
         echo "</div>";
@@ -179,14 +177,12 @@ if (isset($_GET['login']) && !$is_logged_in) {
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
 
-        // Modyfikujemy treść, aby obrazy miały prawidłowe ścieżki
         $content = str_replace("../css/budynki.css", "../css/styles.css", $row['page_content']);
         $content = str_replace("../img/", "img/", $content);
 
         echo "<div class='merdeka'>";
         echo $content; // Wyświetlamy treść z bazy danych
 
-        // Dodanie przycisku do następnej strony (lub powrotu na stronę główną)
         echo "<div class='next-button'>";
         echo "<a href='index.php?id=3' class='button'>Przejdź do następnej strony</a>"; // Zmień `id=3` na następną podstronę
         echo "</div>";
@@ -205,16 +201,14 @@ if (isset($_GET['login']) && !$is_logged_in) {
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
 
-        // Modyfikujemy treść, aby obrazy miały prawidłowe ścieżki
         $content = str_replace("../css/budynki.css", "../css/styles.css", $row['page_content']);
         $content = str_replace("../img/", "img/", $content);
 
         echo "<div class='shanghai-tower'>";
-        echo $content; // Wyświetlamy treść z bazy danych
+        echo $content;
 
-        // Dodanie przycisku do następnej strony (lub powrotu na stronę główną)
         echo "<div class='next-button'>";
-        echo "<a href='index.php?id=4' class='button'>Przejdź do następnej strony</a>"; // Zmień `id=4` na następną podstronę
+        echo "<a href='index.php?id=4' class='button'>Przejdź do następnej strony</a>";
         echo "</div>";
 
         echo "</div>";
@@ -231,14 +225,12 @@ if (isset($_GET['login']) && !$is_logged_in) {
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
 
-        // Poprawienie ścieżek do stylów i obrazów
         $content = str_replace("../css/budynki.css", "../css/styles.css", $row['page_content']);
         $content = str_replace("../img/", "img/", $content);
 
         echo "<div class='abradz-al-bajt'>";
         echo $content;
 
-        // Dodanie przycisku do następnej strony (lub powrotu na stronę główną)
         echo "<div class='next-button'>";
         echo "<a href='index.php?id=5' class='button'>Przejdź do następnej strony</a>"; // Zmień `id=5` na następną podstronę
         echo "</div>";
@@ -257,14 +249,13 @@ if (isset($_GET['login']) && !$is_logged_in) {
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
 
-        // Poprawienie ścieżek do stylów i obrazów
         $content = str_replace("../css/budynki.css", "../css/styles.css", $row['page_content']);
         $content = str_replace("../img/", "img/", $content);
 
         echo "<div class='ping-an-finance-center'>";
         echo $content;
 
-        // Dodanie przycisku powrotu na stronę główną
+
         echo "<div class='next-button'>";
         echo "<a href='index.php?id=0' class='button'>Powrót na stronę główną</a>";
         echo "</div>";
