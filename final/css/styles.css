@@ -1,0 +1,486 @@
+/* Styl dla całej strony */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Kolor tła */
+    color: #333;
+}
+
+/* Styl dla nagłówka */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF; /* Kolor nagłówka */
+    color: white;
+    padding: 15px 20px;
+}
+
+.header a {
+    text-decoration: none;
+    color: white; /* Kolor linków w nagłówku */
+    font-weight: bold;
+    margin-right: 20px; /* Odstęp między linkami */
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+/* Wycentrowany tytuł */
+.center-title {
+    text-align: center;
+    color: #0000FF; /* Niebieski kolor tekstu */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Kontener główny */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+/* Styl dla zdjęć */
+.images-left, .images-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Odstęp między zdjęciami */
+}
+
+.image {
+    max-width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styl dla tabeli */
+.table-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+/* Układ treści Burj Khalifa */
+.burj-khalifa .content-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* Styl dla obrazów */
+.burj-khalifa .image-left, 
+.burj-khalifa .image-right {
+    flex: 1;
+}
+
+.burj-khalifa .image-left img, 
+.burj-khalifa .image-right img {
+    max-width: 100%; /* Zdjęcia dostosowują się do szerokości kontenera */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Tekst na środku */
+.burj-khalifa .text-center {
+    flex: 2;
+    text-align: justify;
+}
+
+/* Układ treści Merdeka */
+.merdeka .content-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Zmniejszony odstęp między elementami */
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* Styl obrazów */
+.merdeka .image-left,
+.merdeka .image-right {
+    flex: 1;
+}
+
+.merdeka .image-left img,
+.merdeka .image-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Tekst w środku */
+.merdeka .text-center {
+    flex: 2;
+    text-align: justify;
+    padding: 0 10px; /* Dodanie lekkiego odstępu wewnętrznego */
+}
+
+/* Styl przycisku */
+.merdeka .next-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.merdeka .next-button .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.merdeka .next-button .button:hover {
+    background-color: #0056b3;
+}
+/* Układ treści Shanghai Tower */
+.shanghai-tower .content-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* Styl obrazów */
+.shanghai-tower .image-left, 
+.shanghai-tower .image-right {
+    flex: 1;
+}
+
+.shanghai-tower .image-left img, 
+.shanghai-tower .image-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Tekst w środku */
+.shanghai-tower .text-center {
+    flex: 2;
+    text-align: justify;
+    padding: 0 10px;
+}
+
+/* Styl tytułu */
+.shanghai-tower h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styl przycisku */
+.shanghai-tower .next-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.shanghai-tower .next-button .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.shanghai-tower .next-button .button:hover {
+    background-color: #0056b3;
+}
+
+/* Układ treści dla Abradż al-Bajt */
+.abradz-al-bajt .content-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* Styl obrazów */
+.abradz-al-bajt .image-left,
+.abradz-al-bajt .image-right {
+    flex: 1;
+}
+
+.abradz-al-bajt .image-left img,
+.abradz-al-bajt .image-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Tekst na środku */
+.abradz-al-bajt .text-center {
+    flex: 2;
+    text-align: justify;
+    padding: 0 10px;
+}
+
+/* Styl przycisku */
+.abradz-al-bajt .next-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.abradz-al-bajt .next-button .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.abradz-al-bajt .next-button .button:hover {
+    background-color: #0056b3;
+}
+/* Układ treści dla Ping An Finance Center */
+.ping-an-finance-center .content-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* Styl obrazów */
+.ping-an-finance-center .image-left,
+.ping-an-finance-center .image-right {
+    flex: 1;
+}
+
+.ping-an-finance-center .image-left img,
+.ping-an-finance-center .image-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Tekst na środku */
+.ping-an-finance-center .text-center {
+    flex: 2;
+    text-align: justify;
+    padding: 0 10px;
+}
+
+/* Styl przycisku */
+.ping-an-finance-center .next-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.ping-an-finance-center .next-button .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.ping-an-finance-center .next-button .button:hover {
+    background-color: #0056b3;
+}
+/* Styl dla paska nawigacyjnego */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF; /* Kolor niebieski */
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 20px; /* Odstępy między linkami */
+}
+
+.header a:last-child {
+    margin-right: 0;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+/* Styl dla zawartości */
+.content {
+    padding: 20px;
+}
+
+/* Styl dla tabeli */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+.test-block {
+    width: 200px;
+    border: 2px solid rgba(71, 236, 30, 1);
+    background: rgba(71, 236, 30, 0.7);
+    text-align: center;
+    color: #000;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 10px auto; /* Wyśrodkowanie elementu */
+}
+
+.test-block:hover {
+    background: rgba(30, 144, 255, 0.7); /* Zmiana koloru tła na hover */
+    color: white; /* Zmiana koloru tekstu na hover */
+}
+
+#animacjaTestowa1, #animacjaTestowa2, #animacjaTestowa3 {
+    transition: all 0.5s ease;
+}
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Większy odstęp między boxami */
+    justify-content: center;
+    padding: 20px;
+    background-color: #f5f5f5; /* Jasne tło dla lepszej czytelności */
+}
+
+/* Pojedynczy box produktu */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd; /* Subtelna ramka */
+    border-radius: 10px; /* Zaokrąglone rogi */
+    padding: 20px;
+    width: 300px; /* Stała szerokość boxa */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Cień dla efektu głębi */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efekt hover dla boxa */
+.product-card:hover {
+    transform: scale(1.05); /* Powiększenie przy najechaniu */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Zwiększony cień */
+}
+
+/* Styl obrazu produktu */
+.product-card img {
+    max-width: 100%;
+    max-height: 200px; /* Ograniczenie wysokości obrazu */
+    margin-bottom: 15px;
+    object-fit: contain; /* Dopasowanie obrazu bez zniekształceń */
+    border-radius: 5px;
+}
+
+/* Tytuł produktu */
+.product-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Opis produktu */
+.product-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+/* Cena i przycisk */
+.product-card a {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover dla przycisku */
+.product-card a:hover {
+    background-color: #0056b3;
+}
+
+/* Wyświetlanie ceny */
+.product-card .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
